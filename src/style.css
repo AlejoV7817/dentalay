@@ -2145,3 +2145,91 @@ img{display:block;max-width:100%}
   border-color: #c8dce8 !important;
   box-shadow: 0 14px 34px rgba(16, 45, 99, .09) !important;
 }
+
+/* =========================================================
+   DENTALAY · CORRECCIONES SOLICITADAS
+   ========================================================= */
+
+/* Etiquetas verdes más grandes y legibles en todas las secciones. */
+.dentalay-site .eyebrow {
+  color: #078653 !important;
+  font-size: 14px !important;
+  font-weight: 850 !important;
+  letter-spacing: .16em !important;
+  line-height: 1.55 !important;
+}
+
+/* En el hero se usa un verde claro para mantener contraste sobre la foto. */
+.dentalay-site .dentalay-hero .eyebrow {
+  color: #8df0c1 !important;
+  font-size: 14px !important;
+  font-weight: 900 !important;
+  letter-spacing: .18em !important;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, .28);
+}
+
+/* Cabecera: aumentar tanto el símbolo como las dos líneas del logotipo. */
+.dentalay-site .navbar {
+  min-height: 104px;
+}
+
+.dentalay-site .navbar .brand {
+  gap: 15px;
+}
+
+.dentalay-site .navbar .brand-logo {
+  width: 74px;
+  height: 74px;
+}
+
+.dentalay-site .navbar .brand-name strong {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 1.1px;
+}
+
+.dentalay-site .navbar .brand-name small {
+  color: #078653;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 2.3px;
+}
+
+/* La solicitud incluye solo dos tarjetas: autoligado y estéticos. */
+.dentalay-site .bracket-options-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 760px) {
+  .dentalay-site .navbar {
+    min-height: 82px;
+  }
+
+  .dentalay-site .navbar .brand-logo {
+    width: 58px;
+    height: 58px;
+  }
+
+  .dentalay-site .navbar .brand-name strong {
+    font-size: 13px;
+  }
+
+  .dentalay-site .navbar .brand-name small {
+    font-size: 9.5px;
+    letter-spacing: 1.8px;
+  }
+
+  .dentalay-site .bracket-options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dentalay-site .eyebrow {
+    font-size: 12.5px !important;
+    letter-spacing: .13em !important;
+  }
+
+  .dentalay-site .dentalay-hero .eyebrow {
+    font-size: 12.5px !important;
+  }
+}
+
