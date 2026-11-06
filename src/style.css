@@ -1,0 +1,2147 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap");
+
+:root{font-family:"DM Sans",sans-serif;color:#12316B;background:#fff;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-weight:400;--cream:#F0FAFC;--beige:#DDF3F5;--green:#12A85B;--green-dark:#1746A2;--ink:#12316B;--muted:#64748B;--white:#FFFFFF;--serif:"DM Sans",sans-serif}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+
+body{margin:0;min-width:320px;min-height:100vh}
+
+body,
+
+
+
+button,
+
+
+
+a{font-family:"DM Sans",sans-serif}
+
+a{color:inherit;text-decoration:none}
+
+button{font:inherit}
+
+img{display:block;max-width:100%}
+
+.site-wrapper{width:100%;overflow:hidden}
+
+.section-padding{padding:100px max(6%,calc((100% - 1320px)/2))}
+
+.navbar{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:30px;min-height:88px;padding:12px 6%;background:rgba(255,255,255,0.97);border-bottom:1px solid rgba(38,37,31,0.09);backdrop-filter:blur(14px)}
+
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+
+.brand-logo{width:58px;height:58px;object-fit:contain}
+
+.brand-name{display:flex;flex-direction:column;gap:3px;font-size:11px;letter-spacing:1.2px}
+
+.brand-name strong{font-size:12px;letter-spacing:0.8px}
+
+.brand-name small{color:var(--green);font-size:10px;letter-spacing:3px}
+
+.nav-links{display:flex;align-items:center;gap:clamp(15px,2.1vw,30px)}
+
+.nav-links > a{font-size:13px;font-weight:600;transition:color 0.2s ease}
+
+.nav-links > a:hover{color:var(--green)}
+
+.nav-links .nav-contact{padding:13px 19px;color:#fff;background:var(--green);border-radius:3px}
+
+.nav-links .nav-contact:hover{color:#fff;background:var(--green-dark)}
+
+.menu-toggle{display:none;width:42px;height:42px;padding:10px;border:1px solid #e2dfd7;border-radius:3px;background:#fff;cursor:pointer}
+
+.menu-toggle span{display:block;height:2px;margin:4px 0;background:var(--ink)}
+
+.hero{position:relative;display:flex;align-items:center;min-height:660px;padding:100px 9%;color:#fff;background:linear-gradient(90deg,rgba(18,49,107,0.82) 0%,rgba(18,49,107,0.58) 48%,rgba(18,49,107,0.16) 100%),url("https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=2200&q=90") center 55%/cover}
+
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,0.17),transparent 50%);pointer-events:none}
+
+.hero-content{position:relative;z-index:1;max-width:700px}
+
+.eyebrow{margin:0 0 18px;color:var(--green);font-size:11px;font-weight:700;letter-spacing:3px;line-height:1.6}
+
+.hero .eyebrow{color:#8DE5E0}
+
+.hero h1{max-width:700px;margin:0;font-family:var(--serif);font-size:clamp(42px,5.2vw,72px);font-weight:500;line-height:1.12;letter-spacing:-1.5px}
+
+.hero-description{max-width:560px;margin:24px 0 30px;color:rgba(255,255,255,0.88);font-size:16px;line-height:1.85}
+
+.hero-actions{display:flex;flex-wrap:wrap;gap:13px}
+
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:49px;padding:14px 22px;border:1px solid transparent;border-radius:2px;font-size:12px;font-weight:700;text-align:center;transition:background 0.2s ease,color 0.2s ease,transform 0.2s ease}
+
+.button:hover{transform:translateY(-2px)}
+
+.button-primary{color:#fff;background:var(--green)}
+
+.button-primary:hover{background:var(--green-dark)}
+
+.button-outline{color:#fff;border-color:rgba(255,255,255,0.7);background:transparent}
+
+.button-outline:hover{color:var(--ink);background:#fff}
+
+.button-dark{color:#fff;background:var(--ink)}
+
+.button-dark:hover{background:var(--green-dark)}
+
+.button-light{flex-shrink:0;color:var(--ink);background:#fff}
+
+.button-light:hover{background:var(--cream)}
+
+.hero-scroll{position:absolute;right:6%;bottom:34px;display:flex;align-items:center;gap:14px;color:rgba(255,255,255,0.85);font-size:10px;letter-spacing:2px}
+
+.hero-scroll span{font-size:19px}
+
+.intro-strip{display:grid;grid-template-columns:repeat(3,1fr);padding:34px 7%;background:var(--cream)}
+
+.intro-strip > div{display:flex;align-items:center;justify-content:center;gap:16px;padding:10px 24px;border-right:1px solid #d9d1c4}
+
+.intro-strip > div:last-child{border-right:0}
+
+.intro-number{color:var(--green);font-family:var(--serif);font-size:33px;white-space:nowrap}
+
+.intro-label{max-width:220px;color:#5c5a52;font-size:12px;line-height:1.6}
+
+.section-heading{max-width:720px;margin:0 auto 48px;text-align:center}
+
+.section-heading h2,
+
+
+
+.services-copy h2,
+
+
+
+.about-copy h2,
+
+
+
+.location-copy h2,
+
+
+
+.contact-heading h2,
+
+
+
+.quote-banner h2{margin:0;font-family:var(--serif);font-size:clamp(31px,3.4vw,46px);font-weight:500;line-height:1.2;letter-spacing:-0.6px}
+
+.section-heading > p:last-child{max-width:610px;margin:17px auto 0;color:var(--muted);font-size:14px;line-height:1.8}
+
+.category-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:25px}
+
+.category-card{min-width:0;overflow:hidden;border:1px solid #ece9e2;background:#fff;transition:transform 0.25s ease,box-shadow 0.25s ease}
+
+.category-card:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(38,37,31,0.09)}
+
+.category-image{height:225px;overflow:hidden;background:#f7f5ef}
+
+.category-image img{width:100%;height:100%;object-fit:contain;transition:transform 0.45s ease}
+
+.category-card:hover .category-image img{transform:scale(1.045)}
+
+.category-info{display:flex;flex-direction:column;align-items:flex-start;min-height:215px;padding:23px 20px}
+
+.category-info h3{margin:0 0 10px;font-family:var(--serif);font-size:21px;font-weight:600;line-height:1.3}
+
+.category-info p{margin:0 0 18px;color:var(--muted);font-size:12px;line-height:1.8}
+
+.text-link{display:inline-flex;align-items:center;gap:10px;margin-top:auto;color:var(--green-dark);font-size:12px;font-weight:700}
+
+.text-link span{transition:transform 0.2s ease}
+
+.text-link:hover span{transform:translate(3px,-3px)}
+
+.center-action{display:flex;justify-content:center;margin-top:45px}
+
+.services-section{background:var(--cream)}
+
+.services-layout{display:grid;grid-template-columns:0.85fr 1.15fr;gap:9%;align-items:start}
+
+.services-copy > p:not(.eyebrow){margin:22px 0 28px;color:var(--muted);font-size:14px;line-height:1.9}
+
+.services-list{padding:30px 34px;background:#fff;border:1px solid #e9e2d6}
+
+.services-list ul{display:grid;gap:18px;margin:0;padding:0;list-style:none}
+
+.services-list li{display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start;color:#55544d;font-size:13px;line-height:1.75}
+
+.service-check{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;color:#fff;background:var(--green);border-radius:50%;font-size:12px}
+
+.about-section{display:grid;grid-template-columns:1fr 0.9fr;gap:9%;align-items:center}
+
+.about-image{position:relative;min-height:500px;background:var(--beige)}
+
+.about-image > img{width:100%;height:500px;object-fit:cover}
+
+.about-image-caption{position:absolute;right:-25px;bottom:30px;display:flex;flex-direction:column;gap:5px;min-width:200px;padding:23px 27px;color:#fff;background:var(--green-dark)}
+
+.about-image-caption span{font-family:var(--serif);font-size:20px}
+
+.about-image-caption small{font-size:11px;letter-spacing:2px}
+
+.about-copy > p:not(.eyebrow){margin:20px 0;color:var(--muted);font-size:14px;line-height:1.9}
+
+.about-copy .text-link{margin-top:8px}
+
+.projects-section{background:#faf9f6}
+
+.projects-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+
+.project-card{position:relative;min-height:370px;overflow:hidden;background:var(--beige)}
+
+.project-card::after{position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(0,0,0,0.72));content:"";pointer-events:none}
+
+.project-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease}
+
+.project-card:hover img{transform:scale(1.05)}
+
+.project-caption{position:absolute;z-index:1;right:23px;bottom:22px;left:23px;display:flex;align-items:center;justify-content:space-between;gap:15px;color:#fff}
+
+.project-caption h3{margin:0;font-family:var(--serif);font-size:23px;font-weight:500}
+
+.project-caption > a{display:flex;align-items:center;justify-content:center;width:39px;height:39px;border:1px solid rgba(255,255,255,0.7);border-radius:50%;font-size:20px}
+
+.project-caption > a:hover{color:var(--ink);background:#fff}
+
+.gallery-note{margin:22px 0 0;color:#89877e;font-size:11px;text-align:center}
+
+.quote-banner{display:flex;align-items:center;justify-content:space-between;gap:35px;padding:65px 9%;color:#fff;background:var(--green-dark)}
+
+.quote-banner .eyebrow{color:#8DE5E0}
+
+.quote-banner h2{max-width:750px}
+
+.quote-banner > div > p:last-child{margin:16px 0 0;color:rgba(255,255,255,0.8);font-size:13px;line-height:1.8}
+
+.location-section{display:grid;grid-template-columns:0.8fr 1.2fr;gap:8%;align-items:center}
+
+.location-copy > p:not(.eyebrow){margin:23px 0;color:var(--muted);font-size:14px;line-height:1.8}
+
+.map-container{position:relative;display:block;height:350px;overflow:hidden;background:var(--cream)}
+
+.map-container iframe{width:100%;height:100%;border:0}
+
+.map-label{position:absolute;right:15px;bottom:15px;padding:12px 16px;color:#fff;background:var(--green-dark);font-size:12px;font-weight:700}
+
+.contact-section{background:var(--cream)}
+
+.contact-heading{max-width:720px;margin:0 auto 42px;text-align:center}
+
+.contact-heading > p:last-child{margin:16px 0 0;color:var(--muted);font-size:14px;line-height:1.8}
+
+.contact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+
+.contact-card{display:flex;flex-direction:column;align-items:flex-start;min-width:0;min-height:245px;padding:30px;border:1px solid #e6dfd3;background:#fff}
+
+.contact-card h3{margin:18px 0 10px;font-family:var(--serif);font-size:22px;font-weight:600}
+
+.contact-card > p{margin:0 0 19px;color:var(--muted);font-size:12px;line-height:1.8;overflow-wrap:anywhere}
+
+.contact-icon{display:flex;align-items:center;justify-content:center;width:43px;height:43px;color:var(--green-dark);background:var(--cream);border-radius:50%;font-size:23px}
+
+.contact-link{margin-top:auto;color:var(--green-dark);font-size:12px;font-weight:700}
+
+.contact-whatsapp{border-top:3px solid var(--green)}
+
+.social-links,
+
+
+
+.footer-socials{display:flex;flex-wrap:wrap;gap:10px}
+
+.social-links a{padding:8px 10px;color:var(--green-dark);border:1px solid #dcd6ca;font-size:11px;font-weight:700}
+
+.social-links a:hover{color:#fff;background:var(--green);border-color:var(--green)}
+
+.footer{display:flex;flex-direction:column;align-items:center;padding:50px 6% 30px;color:rgba(255,255,255,0.8);background:#12316B;text-align:center}
+
+.footer-brand{display:flex;align-items:center;gap:12px;color:#fff;font-family:var(--serif);font-size:19px}
+
+.footer-brand img{width:44px;height:44px;object-fit:contain}
+
+.footer > p{margin:15px 0 22px;color:rgba(255,255,255,0.65);font-size:12px}
+
+.footer-socials{justify-content:center;margin-bottom:28px}
+
+.footer-socials a{padding:8px 12px;border:1px solid rgba(255,255,255,0.2);font-size:11px}
+
+.footer-socials a:hover{color:#fff;border-color:#8DE5E0}
+
+.footer > small{padding-top:22px;border-top:1px solid rgba(255,255,255,0.12);width:100%;color:rgba(255,255,255,0.5);font-size:10px;line-height:1.7}
+
+.whatsapp-float{position:fixed;right:24px;bottom:24px;z-index:200;display:flex;align-items:center;justify-content:center;width:62px;height:62px;color:#fff;background:#25d366;border:3px solid rgba(255,255,255,0.9);border-radius:50%;box-shadow:0 5px 20px rgba(0,0,0,0.22);transition:transform 0.2s ease}
+
+.whatsapp-float:hover{transform:scale(1.08)}
+
+.whatsapp-float svg{width:34px;height:34px;fill:currentColor}
+
+@media (max-width: 1100px){.navbar{padding-right:4%;padding-left:4%}
+
+.nav-links{gap:16px}
+
+.nav-links > a{font-size:12px}
+
+.category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+
+.category-image{height:260px}
+
+.section-padding{padding:80px 5%}
+
+.intro-strip{padding-right:3%;padding-left:3%}
+
+.intro-strip > div{padding-right:12px;padding-left:12px}
+
+.intro-number{font-size:28px}}
+
+@media (max-width: 760px){html{scroll-padding-top:75px}
+
+.navbar{min-height:74px;padding:9px 5%}
+
+.brand{gap:9px}
+
+.brand-logo{width:47px;height:47px}
+
+.brand-name{font-size:9px}
+
+.brand-name strong{font-size:10px}
+
+.brand-name small{font-size:9px;letter-spacing:2px}
+
+.menu-toggle{display:block;flex-shrink:0}
+
+.nav-links{position:absolute;top:100%;right:0;left:0;display:none;align-items:stretch;gap:0;padding:10px 5% 20px;background:#fff;border-bottom:1px solid #e9e5dc;box-shadow:0 12px 18px rgba(0,0,0,0.06)}
+
+.nav-links.nav-links-open{display:flex;flex-direction:column}
+
+.nav-links > a{padding:14px 5px;border-bottom:1px solid #f0eee9;font-size:13px}
+
+.nav-links .nav-contact{margin-top:12px;padding:14px;text-align:center}
+
+.hero{min-height:620px;padding:85px 7% 95px;background-position:58% center}
+
+.hero h1{font-size:clamp(39px,10vw,56px);letter-spacing:-0.8px}
+
+.hero-description{font-size:14px;line-height:1.8}
+
+.hero-actions{align-items:stretch;flex-direction:column;max-width:330px}
+
+.hero-scroll{right:7%;bottom:24px}
+
+.intro-strip{grid-template-columns:1fr;padding:14px 7%}
+
+.intro-strip > div{justify-content:flex-start;padding:18px 0;border-right:0;border-bottom:1px solid #d9d1c4}
+
+.intro-strip > div:last-child{border-bottom:0}
+
+.intro-number{min-width:58px;font-size:30px}
+
+.section-padding{padding:68px 6%}
+
+.section-heading{margin-bottom:32px}
+
+.section-heading h2,
+
+
+
+  .services-copy h2,
+
+
+
+  .about-copy h2,
+
+
+
+  .location-copy h2,
+
+
+
+  .contact-heading h2,
+
+
+
+  .quote-banner h2{font-size:34px}
+
+.section-heading > p:last-child{font-size:13px}
+
+.category-grid{grid-template-columns:1fr;gap:19px}
+
+.category-image{height:250px}
+
+.category-info{min-height:auto;padding:22px}
+
+.category-info h3{font-size:22px}
+
+.category-info p{font-size:13px}
+
+.center-action .button{width:100%}
+
+.services-layout,
+
+
+
+  .about-section,
+
+
+
+  .location-section{grid-template-columns:1fr;gap:35px}
+
+.services-copy > p:not(.eyebrow){font-size:13px}
+
+.services-list{padding:24px 20px}
+
+.services-list ul{gap:16px}
+
+.services-list li{font-size:12px}
+
+.about-image{min-height:350px;margin-right:12px}
+
+.about-image > img{height:350px}
+
+.about-image-caption{right:-12px;bottom:20px;min-width:175px;padding:17px 20px}
+
+.about-copy > p:not(.eyebrow){font-size:13px}
+
+.projects-grid{grid-template-columns:1fr;gap:18px}
+
+.project-card{min-height:310px}
+
+.quote-banner{align-items:flex-start;flex-direction:column;gap:25px;padding:55px 6%}
+
+.quote-banner .button{width:100%}
+
+.location-section{gap:25px}
+
+.map-container{height:300px}
+
+.contact-grid{grid-template-columns:1fr;gap:15px}
+
+.contact-card{min-height:220px;padding:25px}
+
+.footer{padding:40px 6% 25px}
+
+.footer-brand{font-size:16px}
+
+.whatsapp-float{right:16px;bottom:16px;width:56px;height:56px}
+
+.whatsapp-float svg{width:30px;height:30px}}
+
+@media (prefers-reduced-motion: reduce){*,
+
+
+
+  *::before,
+
+
+
+  *::after{scroll-behavior:auto!important;transition-duration:0.01ms!important;animation-duration:0.01ms!important}}
+
+.dentalay-site{--dentalay-navy:#102b63;--dentalay-green:#12a85b;--dentalay-muted:#65748b;--dentalay-pale:#f2f8fb;color:var(--dentalay-navy)}
+
+.dentalay-site .section-padding{padding:clamp(64px,7vw,104px) clamp(22px,5vw,76px)}
+
+.dentalay-site .section-heading{width:min(100%,780px);margin:0 auto 46px;text-align:center}
+
+.dentalay-site .section-heading .eyebrow,
+
+
+
+.dentalay-site .doctor-copy .eyebrow,
+
+
+
+.dentalay-site .bracket-feature-copy .eyebrow{margin:0 0 13px;color:var(--dentalay-green);font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+
+.dentalay-site .section-heading h2{margin:0 0 16px;color:var(--dentalay-navy);font-size:clamp(32px,4vw,48px);font-weight:750;line-height:1.1;letter-spacing:-.035em}
+
+.dentalay-site .section-heading > p:last-child{max-width:650px;margin:0 auto;color:var(--dentalay-muted);font-size:15px;line-height:1.8}
+
+.dentalay-site .dentalay-hero{position:relative;min-height:min(690px,calc(100vh - 82px));display:flex;align-items:center;background-image:linear-gradient(90deg,rgba(8,27,68,.88) 0%,rgba(8,27,68,.66) 48%,rgba(8,27,68,.12) 100%),var(--dentalay-hero-image)!important;background-position:center,58% center!important;background-size:cover!important;background-repeat:no-repeat!important}
+
+.dentalay-site .dentalay-hero .hero-content{width:min(760px,90%);margin-left:clamp(24px,8vw,150px);padding:80px 0}
+
+.dentalay-site .dentalay-hero h1{max-width:720px;margin:18px 0 24px;color:#fff;font-size:clamp(44px,6vw,76px);font-weight:800;line-height:1.02;letter-spacing:-.045em}
+
+.dentalay-site .dentalay-hero .hero-description{max-width:570px;color:rgba(255,255,255,.9);font-size:17px;line-height:1.8}
+
+.dentalay-site .dentalay-hero .eyebrow{color:#79e4bb}
+
+.dentalay-site .dentalay-hero .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+
+.dentalay-site .dentalay-hero .hero-scroll{color:#fff}
+
+.dentalay-site .dentalay-doctor-section{background:#fff}
+
+.dentalay-site .doctor-layout{display:grid;grid-template-columns:minmax(280px,.85fr) minmax(0,1.15fr);align-items:center;gap:clamp(38px,7vw,90px);width:min(1120px,100%);margin:0 auto}
+
+.dentalay-site .doctor-photo{position:relative;min-height:500px;overflow:hidden;background:#eaf5f7;border-radius:14px;box-shadow:0 22px 55px rgba(16,43,99,.13)}
+
+.dentalay-site .doctor-photo img{display:block;width:100%;height:100%;min-height:500px;object-fit:cover;object-position:center 38%}
+
+.dentalay-site .doctor-photo-caption{position:absolute;right:16px;bottom:16px;left:16px;padding:11px 14px;color:#fff;font-size:12px;letter-spacing:.08em;background:rgba(16,43,99,.78);border-radius:6px}
+
+.dentalay-site .doctor-copy h2{margin:0 0 16px;color:var(--dentalay-navy);font-size:clamp(38px,4.4vw,58px);line-height:1.05;letter-spacing:-.04em}
+
+.dentalay-site .doctor-copy > p:not(.eyebrow){color:var(--dentalay-muted);font-size:16px;line-height:1.85}
+
+.dentalay-site .doctor-copy .doctor-lead{margin:0 0 14px;color:var(--dentalay-navy)!important;font-size:20px!important;font-weight:700}
+
+.dentalay-site .doctor-points{display:grid;gap:13px;margin:28px 0 30px}
+
+.dentalay-site .doctor-points span{display:flex;align-items:center;gap:13px;color:var(--dentalay-navy);font-size:14px;font-weight:650}
+
+.dentalay-site .doctor-points b{display:grid;width:34px;height:34px;place-items:center;color:var(--dentalay-green);font-size:11px;background:#e9f8f1;border-radius:50%}
+
+.dentalay-site .orthodontic-feature-section{background:#f4f8fb}
+
+.dentalay-site .bracket-feature-card{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);width:min(1160px,100%);margin:0 auto 34px;overflow:hidden;background:#fff;border:1px solid #e2eaf1;border-radius:16px;box-shadow:0 20px 55px rgba(16,43,99,.09)}
+
+.dentalay-site .bracket-feature-image{min-height:410px;background:#e9f0f4}
+
+.dentalay-site .bracket-feature-image img{display:block;width:100%;height:100%;min-height:410px;object-fit:cover;object-position:center}
+
+.dentalay-site .bracket-feature-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(28px,4.5vw,58px)}
+
+.dentalay-site .bracket-feature-copy h3{margin:0 0 14px;color:var(--dentalay-navy);font-size:clamp(32px,3.5vw,44px);line-height:1.05;letter-spacing:-.035em}
+
+.dentalay-site .bracket-feature-copy .feature-intro{margin:0 0 18px;color:#455a78;font-size:16px;line-height:1.7}
+
+.dentalay-site .bracket-feature-copy ul{display:grid;gap:13px;margin:0 0 20px;padding:0;list-style:none}
+
+.dentalay-site .bracket-feature-copy li{position:relative;padding-left:28px;color:#344c70;font-size:14px;line-height:1.65}
+
+.dentalay-site .bracket-feature-copy li::before{position:absolute;top:0;left:0;color:var(--dentalay-green);content:"✓";font-weight:900}
+
+.dentalay-site .bracket-feature-note{margin:0 0 22px;color:var(--dentalay-muted);font-size:12px;line-height:1.75}
+
+.dentalay-site .bracket-options-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;width:min(1160px,100%);margin:0 auto}
+
+.dentalay-site .bracket-option-card{overflow:hidden;background:#fff;border:1px solid #e1e9f0;border-radius:12px;box-shadow:0 10px 30px rgba(16,43,99,.055);transition:transform .2s ease,box-shadow .2s ease}
+
+.dentalay-site .bracket-option-card:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(16,43,99,.11)}
+
+.dentalay-site .bracket-option-image{display:grid;height:230px;place-items:center;overflow:hidden;background:#f8fafc}
+
+.dentalay-site .bracket-option-image img{display:block;width:100%;height:100%;object-fit:contain;padding:10px}
+
+.dentalay-site .bracket-option-copy{padding:22px 22px 24px}
+
+.dentalay-site .bracket-option-copy h3{margin:0 0 10px;color:var(--dentalay-navy);font-size:20px;line-height:1.25}
+
+.dentalay-site .bracket-option-copy p{min-height:86px;margin:0 0 18px;color:var(--dentalay-muted);font-size:13px;line-height:1.7}
+
+.dentalay-site .bracket-option-copy a{color:#0b9950;font-size:13px;font-weight:800;text-decoration:none}
+
+.dentalay-site .bracket-comparison-figure{display:grid;grid-template-columns:minmax(180px,300px) minmax(0,1fr);align-items:center;gap:28px;width:min(850px,100%);margin:42px auto 0;padding:22px;background:#11131a;border-radius:14px}
+
+.dentalay-site .bracket-comparison-figure img{display:block;width:100%;max-height:450px;object-fit:contain}
+
+.dentalay-site .bracket-comparison-figure figcaption{color:#f3f6fb;font-size:15px;line-height:1.8}
+
+.dentalay-site .appointment-note{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:18px;width:min(900px,100%);margin:38px auto 0;padding:24px;text-align:center;background:#e7f7ef;border-radius:12px}
+
+.dentalay-site .appointment-note strong{color:var(--dentalay-navy);font-size:16px}
+
+.dentalay-site .dentalay-pricing-section{background:#fff}
+
+.dentalay-site .payment-card{width:min(1050px,100%);margin:0 auto;padding:clamp(24px,4vw,48px);background:#f3f8fb;border:1px solid #e2eaf1;border-radius:16px;box-shadow:0 18px 48px rgba(16,43,99,.07)}
+
+.dentalay-site .payment-steps{display:grid;grid-template-columns:1fr auto 1fr auto 1.1fr;align-items:center;gap:18px}
+
+.dentalay-site .payment-step{min-height:185px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:24px;background:#fff;border:1px solid #e2eaf1;border-radius:12px}
+
+.dentalay-site .payment-step > span,
+
+
+
+.dentalay-site .payment-followup span{color:#0a9c54;font-size:10px;font-weight:850;letter-spacing:.12em}
+
+.dentalay-site .payment-step strong{display:block;margin:12px 0 5px;color:var(--dentalay-navy);font-size:clamp(32px,4vw,48px);font-weight:850;letter-spacing:-.04em}
+
+.dentalay-site .payment-step p{margin:0;color:var(--dentalay-muted);font-size:13px;line-height:1.5}
+
+.dentalay-site .payment-plus,
+
+
+
+.dentalay-site .payment-equals{color:var(--dentalay-green);font-size:36px;font-weight:800}
+
+.dentalay-site .payment-step-total{background:#102b63;border-color:#102b63}
+
+.dentalay-site .payment-step-total > span,
+
+
+
+.dentalay-site .payment-step-total p{color:#c9f4df}
+
+.dentalay-site .payment-step-total strong{color:#fff}
+
+.dentalay-site .payment-followup{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:20px}
+
+.dentalay-site .payment-followup > div{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;background:#fff;border:1px solid #e2eaf1;border-radius:10px}
+
+.dentalay-site .payment-followup strong{color:var(--dentalay-navy);font-size:26px}
+
+.dentalay-site .pricing-disclaimer{max-width:760px;margin:24px auto;color:var(--dentalay-muted);font-size:12px;line-height:1.7;text-align:center}
+
+.dentalay-site .faq-section{background:#f4f8fb}
+
+.dentalay-site .faq-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;width:min(1100px,100%);margin:0 auto;align-items:start}
+
+.dentalay-site .faq-group{overflow:hidden;background:#fff;border:1px solid #e2eaf1;border-radius:12px;box-shadow:0 8px 25px rgba(16,43,99,.045)}
+
+.dentalay-site .faq-group h3{margin:0;padding:20px 22px;color:var(--dentalay-navy);font-size:17px;line-height:1.35;background:#eaf6f2;border-bottom:1px solid #e2eaf1}
+
+.dentalay-site .faq-list{padding:4px 20px}
+
+.dentalay-site .faq-item{border-bottom:1px solid #edf1f5}
+
+.dentalay-site .faq-item:last-child{border-bottom:0}
+
+.dentalay-site .faq-item > button{display:flex;width:100%;align-items:center;justify-content:space-between;gap:18px;padding:17px 2px;color:#1b376b;font:inherit;font-size:14px;font-weight:700;line-height:1.5;text-align:left;background:transparent;border:0;cursor:pointer}
+
+.dentalay-site .faq-item > button:hover{color:#0a9c54}
+
+.dentalay-site .faq-symbol{flex:0 0 28px;display:grid;width:28px;height:28px;place-items:center;color:#078d4c;font-size:19px;font-weight:500;background:#e9f8f0;border-radius:50%}
+
+.dentalay-site .faq-answer{padding:0 32px 18px 2px}
+
+.dentalay-site .faq-answer p{margin:0;color:var(--dentalay-muted);font-size:13px;line-height:1.75}
+
+.dentalay-site .button{min-height:46px;display:inline-flex;align-items:center;justify-content:center;padding:12px 22px;border-radius:5px;font-size:13px;font-weight:750;text-decoration:none}
+
+.dentalay-site .button-primary{color:#fff;background:#10a85b;border:1px solid #10a85b}
+
+.dentalay-site .button-primary:hover{background:#07894a;border-color:#07894a}
+
+@media (max-width: 900px){.dentalay-site .doctor-layout{grid-template-columns:minmax(230px,.85fr) minmax(0,1fr);gap:32px}
+
+.dentalay-site .payment-steps{grid-template-columns:1fr}
+
+.dentalay-site .payment-plus,
+
+
+
+  .dentalay-site .payment-equals{text-align:center;line-height:1}}
+
+@media (max-width: 700px){.dentalay-site .section-padding{padding:58px 20px}
+
+.dentalay-site .dentalay-hero{min-height:620px;background-position:center,62% center!important}
+
+.dentalay-site .dentalay-hero .hero-content{width:auto;margin:0;padding:60px 24px}
+
+.dentalay-site .dentalay-hero h1{font-size:clamp(42px,11vw,58px)}
+
+.dentalay-site .dentalay-hero .hero-description{font-size:15px}
+
+.dentalay-site .doctor-layout{grid-template-columns:1fr}
+
+.dentalay-site .doctor-photo,
+
+
+
+  .dentalay-site .doctor-photo img{min-height:420px;max-height:520px}
+
+.dentalay-site .bracket-feature-card{grid-template-columns:1fr}
+
+.dentalay-site .bracket-feature-image,
+
+
+
+  .dentalay-site .bracket-feature-image img{min-height:260px;max-height:340px}
+
+.dentalay-site .bracket-options-grid{grid-template-columns:1fr}
+
+.dentalay-site .bracket-option-image{height:250px}
+
+.dentalay-site .bracket-option-copy p{min-height:0}
+
+.dentalay-site .bracket-comparison-figure{grid-template-columns:1fr;gap:14px;padding:16px}
+
+.dentalay-site .bracket-comparison-figure img{max-height:480px}
+
+.dentalay-site .payment-followup{grid-template-columns:1fr}
+
+.dentalay-site .payment-followup > div{align-items:flex-start;flex-direction:column}
+
+.dentalay-site .faq-groups{grid-template-columns:1fr}}
+
+
+
+/* DENTALAY: refinamiento de ortodoncia, pagos, CTA, ubicación y contacto */
+
+.dentalay-site .orthodontics-section{background:linear-gradient(180deg,#f0fafc 0%,#f7fbfd 100%)}
+
+.dentalay-site .orthodontics-section .section-heading{max-width:760px;margin:0 auto 44px}
+
+.dentalay-site .orthodontics-section>.category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;max-width:1200px;margin:0 auto 54px}
+
+.dentalay-site .orthodontics-section .category-card{display:flex;flex-direction:column;min-width:0;overflow:hidden;background:#fff;border:1px solid #dce8ef;border-radius:18px;box-shadow:0 12px 30px rgba(16,43,99,.07);transition:transform .2s,box-shadow .2s}
+
+.dentalay-site .orthodontics-section .category-card:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(16,43,99,.12)}
+
+.dentalay-site .orthodontics-section .category-image{position:relative;display:block;width:100%;height:230px;min-height:230px;background:#f3f8fa;overflow:hidden}
+
+.dentalay-site .orthodontics-section .category-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+
+.dentalay-site .orthodontics-section .category-image .image-placeholder{display:none}
+
+.dentalay-site .orthodontics-section .category-image.image-unavailable .image-placeholder{display:flex;position:absolute;inset:0;align-items:center;justify-content:center;padding:22px;text-align:center;color:#64748b}
+
+.dentalay-site .orthodontics-section .category-info{display:flex;flex:1;flex-direction:column;align-items:flex-start;padding:26px 26px 28px}
+
+.dentalay-site .orthodontics-section .category-info h3{margin:0 0 12px;color:#12316b;font-size:22px;line-height:1.25}
+
+.dentalay-site .orthodontics-section .category-info p{margin:0 0 24px;color:#526782;font-size:14px;line-height:1.8}
+
+.dentalay-site .orthodontics-section .category-info .text-link{margin-top:auto;color:#0c9d57;font-size:13px;font-weight:800}
+
+.dentalay-site .orthodontics-details{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:46px;align-items:center;max-width:1200px;margin:0 auto;padding:44px;background:#fff;border:1px solid #deebef;border-radius:20px;box-shadow:0 12px 32px rgba(16,43,99,.05)}
+
+.dentalay-site .orthodontics-details .services-copy{min-width:0}
+
+.dentalay-site .orthodontics-details .services-copy h2{font-size:clamp(27px,3vw,38px);line-height:1.2}
+
+.dentalay-site .orthodontics-details .services-copy>p:not(.eyebrow){color:#526782;line-height:1.8}
+
+.dentalay-site .orthodontics-details .services-list{min-width:0;padding:24px 30px;background:#f4fafc;border:1px solid #e0edf1;border-radius:15px}
+
+.dentalay-site .orthodontics-details .services-list ul{margin:0;padding:0;list-style:none}
+
+.dentalay-site .orthodontics-details .services-list li{display:flex;align-items:flex-start;gap:14px;padding:12px 0;color:#344d6b;font-size:14px;line-height:1.6}
+
+.dentalay-site .orthodontics-details .service-check{flex:0 0 26px;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#0eaa61;color:white}
+
+.dentalay-site .dentalay-pricing-section .payment-card{text-align:center}
+
+.dentalay-site .dentalay-pricing-section .payment-steps,.dentalay-site .dentalay-pricing-section .payment-followup{text-align:left}
+
+.dentalay-site .dentalay-pricing-section .payment-card>.button{display:inline-flex;margin:8px auto 0;min-width:245px;justify-content:center;border-radius:9px}
+
+.dentalay-site .dentalay-banner{position:relative;display:flex;align-items:center;justify-content:space-between;gap:45px;padding:76px max(6%,calc((100vw - 1200px)/2));background:linear-gradient(120deg,#102b63 0%,#18499a 68%,#0c777c 140%);overflow:hidden}
+
+.dentalay-site .dentalay-banner::after{content:"";position:absolute;width:420px;height:420px;right:-120px;top:-200px;border-radius:50%;border:90px solid rgba(255,255,255,.045);pointer-events:none}
+
+.dentalay-site .dentalay-banner>div{position:relative;z-index:1;max-width:710px}
+
+.dentalay-site .dentalay-banner h2{margin:12px 0 16px;max-width:720px;font-size:clamp(30px,3.5vw,48px);font-weight:750;line-height:1.18;letter-spacing:-.03em;color:#fff}
+
+.dentalay-site .dentalay-banner>div>p:last-child{max-width:520px;color:#d9eaff;font-size:15px;line-height:1.75}
+
+.dentalay-site .dentalay-banner .button-light{position:relative;z-index:1;flex-shrink:0;min-width:205px;padding:16px 24px;border-radius:11px;background:#fff;color:#12316b;font-weight:800;box-shadow:0 12px 30px rgba(0,0,0,.14);transition:transform .2s,background .2s}
+
+.dentalay-site .dentalay-banner .button-light:hover{transform:translateY(-3px);background:#e8fff3}
+
+.dentalay-site .location-section{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;gap:48px;background:#fff}
+
+.dentalay-site .location-copy{min-width:0;max-width:620px}
+
+.dentalay-site .location-copy h2{margin:12px 0 20px;font-size:clamp(32px,3.5vw,46px);line-height:1.15}
+
+.dentalay-site .location-copy>.appointment-inline{display:inline-block;margin:0 0 18px!important;padding:9px 14px;color:#0c8d50!important;background:#e8f8ef;border-radius:30px;font-size:13px!important}
+
+.dentalay-site .location-copy>p:not(.eyebrow){line-height:1.75}
+
+.dentalay-site .clinic-hours{margin:28px 0 26px;padding:24px;background:#f5f9fc;border:1px solid #e2eaf1;border-radius:15px}
+
+.dentalay-site .clinic-hours h3{margin:0 0 16px;font-size:19px;color:#12316b}
+
+.dentalay-site .clinic-hours ul{display:grid;gap:0;margin:0;padding:0;list-style:none}
+
+.dentalay-site .clinic-hours li{display:grid;grid-template-columns:minmax(150px,.85fr) minmax(0,1.15fr);gap:18px;align-items:start;padding:14px 0;border-bottom:1px solid #e0e8f0;font-size:13px;line-height:1.65}
+
+.dentalay-site .clinic-hours li:last-child{border-bottom:0;padding-bottom:0}
+
+.dentalay-site .clinic-hours li strong{color:#12316b;font-weight:750}
+
+.dentalay-site .clinic-hours li span{color:#4d6380;overflow-wrap:anywhere}
+
+.dentalay-site .dentalay-map{min-height:440px;height:auto;align-self:stretch;border:1px solid #dce8f0;border-radius:20px;box-shadow:0 16px 40px rgba(16,43,99,.08);overflow:hidden}
+
+.dentalay-site .dentalay-map iframe{width:100%;height:100%;min-height:440px}
+
+.dentalay-site .contact-section{background:linear-gradient(180deg,#f0fafc,#e9f5f9)}
+
+.dentalay-site .contact-heading{margin:0 auto 46px}
+
+.dentalay-site .contact-heading h2{font-size:clamp(32px,4vw,46px)}
+
+.dentalay-site .contact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;max-width:1200px;margin:0 auto}
+
+.dentalay-site .contact-card{min-height:290px;padding:32px;border:1px solid #dce8ef;border-radius:17px;background:#fff;box-shadow:0 12px 32px rgba(16,43,99,.065);transition:transform .2s,box-shadow .2s}
+
+.dentalay-site .contact-card:hover{transform:translateY(-4px);box-shadow:0 20px 44px rgba(16,43,99,.11)}
+
+.dentalay-site .contact-whatsapp{border-top:4px solid #0eaa61}
+
+.dentalay-site .contact-icon{width:52px;height:52px;font-size:25px;background:#e9f8f1;color:#0c9d57}
+
+.dentalay-site .contact-card h3{margin:22px 0 12px;font-size:24px;color:#12316b}
+
+.dentalay-site .contact-card>p{font-size:14px;line-height:1.75;color:#526782}
+
+.dentalay-site .contact-link{display:inline-flex;align-items:center;justify-content:center;min-height:42px;margin-top:auto;padding:11px 17px;border-radius:9px;background:#eaf7f1;color:#078d4c;font-size:13px;font-weight:800}
+
+.dentalay-site .contact-link:hover{background:#0eaa61;color:#fff}
+
+.dentalay-site .social-links{display:flex;flex-wrap:wrap;gap:9px;margin-top:auto}
+
+.dentalay-site .social-links a{padding:11px 14px;border:1px solid #d8e6ef;border-radius:8px;background:#f5fafc;color:#12316b;font-size:12px}
+
+.dentalay-site .social-links a:hover{background:#12316b;border-color:#12316b;color:#fff}
+
+.dentalay-site .dentalay-footer{padding:54px 20px 28px;background:#102b63}
+
+.dentalay-site .footer-brand{gap:14px;font-weight:800}
+
+.dentalay-site .footer-logo{width:58px;height:58px;padding:5px;border-radius:12px;background:#fff;object-fit:contain}
+
+.dentalay-site .footer-socials{gap:12px;margin-top:4px}
+
+.dentalay-site .footer-socials a{padding:11px 17px;border:1px solid rgba(255,255,255,.2);border-radius:8px;transition:background .2s}
+
+.dentalay-site .footer-socials a:hover{background:rgba(255,255,255,.15)}
+
+@media(max-width:1050px){.dentalay-site .orthodontics-section>.category-grid{gap:16px}.dentalay-site .orthodontics-details{gap:24px;padding:30px}.dentalay-site .location-section{gap:28px}.dentalay-site .clinic-hours li{grid-template-columns:1fr;gap:4px}}
+
+@media(max-width:760px){.dentalay-site .orthodontics-section>.category-grid,.dentalay-site .orthodontics-details,.dentalay-site .location-section,.dentalay-site .contact-grid{grid-template-columns:1fr}.dentalay-site .orthodontics-section>.category-grid{margin-bottom:32px}.dentalay-site .orthodontics-section .category-image{height:230px}.dentalay-site .orthodontics-details{padding:26px 22px}.dentalay-site .orthodontics-details .services-list{padding:18px}.dentalay-site .dentalay-banner{flex-direction:column;align-items:flex-start;gap:28px;padding:62px 24px}.dentalay-site .dentalay-banner .button-light{width:100%;max-width:360px}.dentalay-site .location-section{gap:32px}.dentalay-site .dentalay-map,.dentalay-site .dentalay-map iframe{min-height:320px}.dentalay-site .clinic-hours li{grid-template-columns:1fr}.dentalay-site .contact-card{min-height:240px}.dentalay-site .dentalay-pricing-section .payment-card>.button{width:100%;min-width:0}}
+
+
+
+
+
+/* AJUSTES FINALES SOLICITADOS: DENTALAY */
+
+.dentalay-site .dentalay-hero{
+
+  min-height:clamp(570px,78vh,760px);
+
+  background-image:linear-gradient(90deg,rgba(8,27,68,.86) 0%,rgba(8,27,68,.62) 43%,rgba(8,27,68,.08) 100%),var(--dentalay-hero-image)!important;
+
+  background-position:center,center 48%!important;
+
+  background-size:cover!important;
+
+}
+
+.dentalay-site .dentalay-hero .hero-content{max-width:720px}
+
+.dentalay-site .dentalay-hero h1{max-width:720px;letter-spacing:-.035em}
+
+.dentalay-site .dentalay-hero .hero-description{max-width:570px}
+
+.dentalay-site .doctor-photo{min-height:500px;max-height:560px;background:#eef7f8}
+
+.dentalay-site .doctor-photo img{width:100%;height:520px;min-height:0;max-height:560px;object-fit:cover;object-position:center 22%}
+
+.dentalay-site .orthodontics-section>.category-grid{gap:22px;max-width:1160px}
+
+.dentalay-site .orthodontics-section .category-image{height:178px;min-height:178px;padding:9px;background:#f7fbfc}
+
+.dentalay-site .orthodontics-section .category-image img{object-fit:contain;object-position:center;width:100%;height:100%;padding:0}
+
+.dentalay-site .orthodontics-section .category-info{padding:22px 23px 24px}
+
+.dentalay-site .orthodontics-section .category-info h3{font-size:20px}
+
+.dentalay-site .orthodontics-section .category-info p{font-size:13px;line-height:1.75}
+
+.dentalay-site .button,
+
+.dentalay-site .nav-contact,
+
+.dentalay-site .contact-link,
+
+.dentalay-site .text-link,
+
+.dentalay-site .social-links a{
+
+  transition:transform .22s ease,box-shadow .22s ease,background-color .22s ease,color .22s ease,border-color .22s ease;
+
+}
+
+.dentalay-site .button{position:relative;overflow:hidden;border-radius:9px;box-shadow:0 5px 14px rgba(16,43,99,.08)}
+
+.dentalay-site .button:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(16,43,99,.16)}
+
+.dentalay-site .button:active{transform:translateY(-1px) scale(.985)}
+
+.dentalay-site .button-primary:hover{background:#07894a;box-shadow:0 12px 25px rgba(10,168,91,.24)}
+
+.dentalay-site .nav-contact:hover{transform:translateY(-2px);box-shadow:0 9px 20px rgba(10,168,91,.22)}
+
+.dentalay-site .category-card:hover,.dentalay-site .bracket-option-card:hover,.dentalay-site .contact-card:hover{transform:translateY(-5px)}
+
+.dentalay-site a:focus-visible,.dentalay-site button:focus-visible{outline:3px solid rgba(18,168,91,.45);outline-offset:3px}
+
+@media(max-width:760px){
+
+  .dentalay-site .dentalay-hero{min-height:640px;background-position:center,58% center!important}
+
+  .dentalay-site .doctor-photo,.dentalay-site .doctor-photo img{min-height:0;height:440px;max-height:500px}
+
+  .dentalay-site .orthodontics-section>.category-grid{grid-template-columns:1fr;max-width:440px}
+
+  .dentalay-site .orthodontics-section .category-image{height:190px;min-height:190px}
+
+}
+
+@media(prefers-reduced-motion:reduce){
+
+  .dentalay-site *, .dentalay-site *::before,.dentalay-site *::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+
+}
+
+
+
+
+
+/* Interacciones sutiles: botones, enlaces y tarjetas */
+
+.dentalay-site .button,
+
+.dentalay-site .nav-contact,
+
+.dentalay-site .contact-link,
+
+.dentalay-site .text-link,
+
+.dentalay-site .bracket-option-copy > a {
+
+  transition: transform .22s ease, box-shadow .22s ease, background-color .22s ease, color .22s ease;
+
+}
+
+.dentalay-site .button:hover,
+
+.dentalay-site .nav-contact:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 22px rgba(18, 49, 107, .16);
+
+}
+
+.dentalay-site .button:active,
+
+.dentalay-site .nav-contact:active {
+
+  transform: translateY(-1px) scale(.985);
+
+}
+
+.dentalay-site a:focus-visible,
+
+.dentalay-site button:focus-visible {
+
+  outline: 3px solid rgba(18, 168, 91, .38);
+
+  outline-offset: 3px;
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .dentalay-site *, .dentalay-site *::before, .dentalay-site *::after {
+
+    scroll-behavior: auto !important;
+
+    animation-duration: .01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    transition-duration: .01ms !important;
+
+  }
+
+}
+
+/* =========================================================
+   DENTALAY · REFINAMIENTO VISUAL
+   Solo estilos: no modifica contenido, imágenes ni funciones.
+   ========================================================= */
+
+.dentalay-site {
+  --dentalay-navy: #102b63;
+  --dentalay-navy-deep: #0b204d;
+  --dentalay-green: #0ca765;
+  --dentalay-green-dark: #078653;
+  --dentalay-muted: #64748b;
+  --dentalay-pale: #f3f8fc;
+  --dentalay-line: #e3ebf3;
+  color: var(--dentalay-navy);
+  background: #fff;
+}
+
+.dentalay-site *,
+.dentalay-site *::before,
+.dentalay-site *::after {
+  box-sizing: border-box;
+}
+
+.dentalay-site ::selection {
+  color: #fff;
+  background: var(--dentalay-green);
+}
+
+.dentalay-site a,
+.dentalay-site button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dentalay-site a:focus-visible,
+.dentalay-site button:focus-visible {
+  outline: 3px solid rgba(12, 167, 101, .35);
+  outline-offset: 4px;
+}
+
+/* Navegación */
+.dentalay-site .navbar {
+  min-height: 82px;
+  padding: 12px clamp(22px, 5.5vw, 90px);
+  background: rgba(255, 255, 255, .94);
+  border-bottom: 1px solid rgba(16, 43, 99, .07);
+  box-shadow: 0 5px 24px rgba(16, 43, 99, .045);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.dentalay-site .brand-logo {
+  transition: transform .25s ease;
+}
+
+.dentalay-site .brand:hover .brand-logo {
+  transform: translateY(-2px);
+}
+
+.dentalay-site .brand-name strong {
+  letter-spacing: .11em;
+}
+
+.dentalay-site .brand-name small {
+  color: var(--dentalay-green);
+  letter-spacing: .23em;
+}
+
+.dentalay-site .nav-links {
+  gap: clamp(13px, 1.65vw, 25px);
+}
+
+.dentalay-site .nav-links > a:not(.nav-contact) {
+  position: relative;
+  padding: 9px 0;
+  color: #243b63;
+  font-size: 12px;
+  font-weight: 650;
+  transition: color .22s ease;
+}
+
+.dentalay-site .nav-links > a:not(.nav-contact)::after {
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  height: 2px;
+  content: "";
+  background: var(--dentalay-green);
+  border-radius: 99px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .22s ease;
+}
+
+.dentalay-site .nav-links > a:not(.nav-contact):hover {
+  color: var(--dentalay-green-dark);
+}
+
+.dentalay-site .nav-links > a:not(.nav-contact):hover::after {
+  transform: scaleX(1);
+}
+
+.dentalay-site .nav-links .nav-contact {
+  padding: 13px 20px;
+  color: #fff;
+  background: linear-gradient(135deg, #12b873, #07965a);
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 9px;
+  box-shadow: 0 7px 17px rgba(12, 167, 101, .2);
+  transition: transform .22s ease, box-shadow .22s ease, background .22s ease;
+}
+
+.dentalay-site .nav-links .nav-contact:hover {
+  color: #fff;
+  background: linear-gradient(135deg, #0ca765, #087d50);
+  box-shadow: 0 10px 22px rgba(12, 167, 101, .28);
+  transform: translateY(-2px);
+}
+
+.dentalay-site .menu-toggle {
+  border-color: var(--dentalay-line);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(16, 43, 99, .06);
+}
+
+/* Portada: conserva la fotografía y el texto actuales */
+.dentalay-site .dentalay-hero {
+  isolation: isolate;
+  min-height: min(720px, calc(100vh - 82px));
+  background-color: var(--dentalay-navy-deep);
+}
+
+.dentalay-site .dentalay-hero::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  background: linear-gradient(90deg,
+    rgba(7, 25, 63, .24) 0%,
+    rgba(7, 25, 63, .08) 58%,
+    rgba(7, 25, 63, .02) 100%);
+  pointer-events: none;
+}
+
+.dentalay-site .dentalay-hero .eyebrow {
+  letter-spacing: .24em;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, .2);
+}
+
+.dentalay-site .dentalay-hero h1 {
+  text-shadow: 0 4px 24px rgba(4, 18, 48, .18);
+}
+
+.dentalay-site .dentalay-hero .hero-description {
+  text-shadow: 0 2px 12px rgba(4, 18, 48, .18);
+}
+
+.dentalay-site .hero-scroll {
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, .28);
+  border-radius: 99px;
+  background: rgba(8, 27, 68, .2);
+  backdrop-filter: blur(8px);
+  transition: background .2s ease, transform .2s ease;
+}
+
+.dentalay-site .hero-scroll:hover {
+  background: rgba(8, 27, 68, .48);
+  transform: translateY(-3px);
+}
+
+/* Botones */
+.dentalay-site .button {
+  position: relative;
+  min-height: 48px;
+  padding: 13px 23px;
+  overflow: hidden;
+  border-radius: 9px;
+  font-weight: 750;
+  letter-spacing: .01em;
+  transition: transform .22s ease, box-shadow .22s ease, background .22s ease, border-color .22s ease;
+}
+
+.dentalay-site .button-primary {
+  color: #fff;
+  background: linear-gradient(135deg, #12b873 0%, #07965a 100%);
+  box-shadow: 0 7px 18px rgba(12, 167, 101, .18);
+}
+
+.dentalay-site .button-primary:hover {
+  background: linear-gradient(135deg, #0ca765 0%, #087d50 100%);
+  box-shadow: 0 11px 24px rgba(12, 167, 101, .27);
+  transform: translateY(-3px);
+}
+
+.dentalay-site .button-outline {
+  border: 1px solid rgba(255, 255, 255, .72);
+  border-radius: 9px;
+  background: rgba(8, 27, 68, .12);
+  backdrop-filter: blur(6px);
+}
+
+.dentalay-site .button-outline:hover {
+  color: var(--dentalay-navy);
+  border-color: #fff;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, .12);
+}
+
+.dentalay-site .button-dark,
+.dentalay-site .button-light {
+  border-radius: 9px;
+}
+
+.dentalay-site .button:active,
+.dentalay-site .nav-contact:active {
+  transform: translateY(0) scale(.98);
+}
+
+/* Ritmo visual y encabezados */
+.dentalay-site .section-padding {
+  padding: clamp(76px, 8vw, 112px) clamp(22px, 5.5vw, 88px);
+}
+
+.dentalay-site .section-heading {
+  margin-bottom: clamp(34px, 4vw, 52px);
+}
+
+.dentalay-site .section-heading h2,
+.dentalay-site .doctor-copy h2,
+.dentalay-site .services-copy h2,
+.dentalay-site .location-copy h2,
+.dentalay-site .contact-heading h2,
+.dentalay-site .quote-banner h2 {
+  letter-spacing: -.035em;
+}
+
+.dentalay-site .eyebrow {
+  letter-spacing: .2em;
+}
+
+/* Franja de datos */
+.dentalay-site .dentalay-intro {
+  background: linear-gradient(110deg, #f1faf8, #f1f7fc);
+  border-bottom: 1px solid #e6eff4;
+}
+
+.dentalay-site .dentalay-intro > div {
+  border-color: #d9e6ed;
+}
+
+.dentalay-site .intro-number {
+  color: var(--dentalay-green);
+  font-weight: 700;
+}
+
+.dentalay-site .intro-label {
+  color: #536781;
+}
+
+/* Presentación de la doctora: conserva su fotografía */
+.dentalay-site .dentalay-doctor-section {
+  background: linear-gradient(180deg, #fff 0%, #fbfdff 100%);
+}
+
+.dentalay-site .doctor-photo {
+  border: 1px solid rgba(16, 43, 99, .08);
+  border-radius: 18px;
+  box-shadow: 0 24px 65px rgba(16, 43, 99, .13);
+}
+
+.dentalay-site .doctor-photo img {
+  transition: transform .55s ease;
+}
+
+.dentalay-site .doctor-photo:hover img {
+  transform: scale(1.025);
+}
+
+.dentalay-site .doctor-photo-caption {
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 8px;
+  box-shadow: 0 5px 18px rgba(7, 25, 63, .14);
+  backdrop-filter: blur(10px);
+}
+
+.dentalay-site .doctor-copy .doctor-lead {
+  letter-spacing: -.01em;
+}
+
+.dentalay-site .doctor-points b {
+  box-shadow: inset 0 0 0 1px rgba(12, 167, 101, .1);
+}
+
+/* Brackets y tarjetas */
+.dentalay-site .orthodontic-feature-section {
+  background: linear-gradient(180deg, #f2f8fc 0%, #f7fafc 100%);
+}
+
+.dentalay-site .bracket-feature-card {
+  border: 1px solid #e4edf4;
+  border-radius: 20px;
+  box-shadow: 0 22px 60px rgba(16, 43, 99, .09);
+  transition: box-shadow .28s ease, transform .28s ease;
+}
+
+.dentalay-site .bracket-feature-card:hover {
+  box-shadow: 0 28px 70px rgba(16, 43, 99, .13);
+  transform: translateY(-3px);
+}
+
+.dentalay-site .bracket-feature-image {
+  background: #edf4f8;
+}
+
+.dentalay-site .bracket-feature-copy li::before {
+  display: grid;
+  width: 19px;
+  height: 19px;
+  place-items: center;
+  background: #e7f8ef;
+  border-radius: 50%;
+  font-size: 11px;
+}
+
+.dentalay-site .bracket-options-grid {
+  gap: 24px;
+}
+
+.dentalay-site .bracket-option-card,
+.dentalay-site .category-card {
+  border: 1px solid #e2eaf1;
+  border-radius: 16px;
+  box-shadow: 0 9px 28px rgba(16, 43, 99, .045);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.dentalay-site .bracket-option-card:hover,
+.dentalay-site .category-card:hover {
+  border-color: #c9e9dc;
+  box-shadow: 0 19px 42px rgba(16, 43, 99, .105);
+  transform: translateY(-6px);
+}
+
+.dentalay-site .bracket-option-image,
+.dentalay-site .category-image {
+  background: linear-gradient(145deg, #f5f9fc, #edf5f8);
+}
+
+.dentalay-site .bracket-option-copy h3,
+.dentalay-site .category-info h3 {
+  letter-spacing: -.02em;
+}
+
+.dentalay-site .bracket-option-copy a,
+.dentalay-site .text-link {
+  color: var(--dentalay-green-dark);
+  transition: color .2s ease;
+}
+
+.dentalay-site .bracket-option-copy a:hover,
+.dentalay-site .text-link:hover {
+  color: #056d45;
+}
+
+.dentalay-site .bracket-comparison-figure {
+  background: linear-gradient(135deg, #102b63, #183d79);
+  border: 1px solid rgba(16, 43, 99, .1);
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(16, 43, 99, .12);
+}
+
+.dentalay-site .appointment-note {
+  background: linear-gradient(110deg, #e9f8f0, #eff9fb);
+  border: 1px solid #d8efe3;
+  border-radius: 15px;
+}
+
+/* Secciones informativas */
+.dentalay-site .orthodontics-section {
+  background: #fff;
+}
+
+.dentalay-site .orthodontics-details {
+  margin-top: clamp(58px, 7vw, 88px);
+  padding: clamp(28px, 4vw, 48px);
+  background: #f3f8fc;
+  border: 1px solid #e5edf4;
+  border-radius: 18px;
+}
+
+.dentalay-site .services-list {
+  border: 1px solid #e2eaf1;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(16, 43, 99, .045);
+}
+
+.dentalay-site .service-check {
+  background: linear-gradient(135deg, #13b875, #07965a);
+  box-shadow: 0 4px 10px rgba(12, 167, 101, .16);
+}
+
+/* Costos */
+.dentalay-site .dentalay-pricing-section {
+  background: linear-gradient(180deg, #fff, #f8fbfd);
+}
+
+.dentalay-site .payment-card {
+  background: linear-gradient(145deg, #f2f8fc, #f7fbfd);
+  border: 1px solid #e1eaf2;
+  border-radius: 20px;
+  box-shadow: 0 18px 50px rgba(16, 43, 99, .075);
+}
+
+.dentalay-site .payment-step {
+  border: 1px solid #e4ebf2;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(16, 43, 99, .035);
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.dentalay-site .payment-step:hover {
+  box-shadow: 0 12px 25px rgba(16, 43, 99, .08);
+  transform: translateY(-3px);
+}
+
+.dentalay-site .payment-step-total {
+  border-color: #ccebdc;
+  background: linear-gradient(145deg, #f0fbf5, #fff);
+}
+
+.dentalay-site .payment-followup {
+  border-top-color: #dce7ef;
+}
+
+/* Banner */
+.dentalay-site .dentalay-banner {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(115deg, #0c2458 0%, #123a78 58%, #087b58 140%);
+}
+
+.dentalay-site .dentalay-banner::after {
+  position: absolute;
+  top: -130px;
+  right: -90px;
+  width: 360px;
+  height: 360px;
+  content: "";
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 50%;
+  box-shadow: 0 0 0 35px rgba(255, 255, 255, .025), 0 0 0 75px rgba(255, 255, 255, .02);
+  pointer-events: none;
+}
+
+.dentalay-site .dentalay-banner > * {
+  position: relative;
+  z-index: 1;
+}
+
+.dentalay-site .dentalay-banner .button-light {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, .13);
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.dentalay-site .dentalay-banner .button-light:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .2);
+  transform: translateY(-3px);
+}
+
+/* Preguntas frecuentes */
+.dentalay-site .faq-section {
+  background: #f7fafc;
+}
+
+.dentalay-site .faq-groups {
+  width: min(100%, 1000px);
+  margin: 0 auto;
+}
+
+.dentalay-site .faq-group {
+  margin-bottom: 22px;
+  padding: clamp(18px, 2.5vw, 28px);
+  background: #fff;
+  border: 1px solid #e3ebf2;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(16, 43, 99, .035);
+}
+
+.dentalay-site .faq-group h3 {
+  color: var(--dentalay-navy);
+  letter-spacing: -.015em;
+}
+
+.dentalay-site .faq-item {
+  border-bottom-color: #edf1f5;
+}
+
+.dentalay-site .faq-item button {
+  transition: color .2s ease;
+}
+
+.dentalay-site .faq-item button:hover {
+  color: var(--dentalay-green-dark);
+}
+
+.dentalay-site .faq-symbol {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  place-items: center;
+  color: var(--dentalay-green-dark);
+  background: #eaf8f1;
+  border-radius: 50%;
+}
+
+/* Ubicación, contacto y pie */
+.dentalay-site .location-section {
+  background: #fff;
+}
+
+.dentalay-site .clinic-hours {
+  background: #f6f9fc;
+  border: 1px solid #e2eaf1;
+  border-radius: 15px;
+}
+
+.dentalay-site .dentalay-map {
+  border: 1px solid #dfe8f0;
+  border-radius: 18px;
+  box-shadow: 0 18px 42px rgba(16, 43, 99, .09);
+}
+
+.dentalay-site .contact-section {
+  background: linear-gradient(180deg, #f2f8fb 0%, #edf6f8 100%);
+}
+
+.dentalay-site .contact-card {
+  border: 1px solid #e0e9f0;
+  border-radius: 16px;
+  box-shadow: 0 9px 26px rgba(16, 43, 99, .045);
+  transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease;
+}
+
+.dentalay-site .contact-card:hover {
+  border-color: #cce9dc;
+  box-shadow: 0 17px 36px rgba(16, 43, 99, .09);
+  transform: translateY(-5px);
+}
+
+.dentalay-site .contact-icon {
+  color: var(--dentalay-green-dark);
+  background: #e8f7ef;
+  box-shadow: inset 0 0 0 1px rgba(12, 167, 101, .08);
+}
+
+.dentalay-site .contact-link {
+  color: var(--dentalay-green-dark);
+}
+
+.dentalay-site .social-links a {
+  border-color: #dce7ee;
+  border-radius: 8px;
+  transition: color .2s ease, background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.dentalay-site .social-links a:hover {
+  color: #fff;
+  background: var(--dentalay-green);
+  border-color: var(--dentalay-green);
+  transform: translateY(-2px);
+}
+
+.dentalay-site .footer {
+  background: linear-gradient(120deg, #0b204d, #102f68 70%, #0b3d58);
+}
+
+.dentalay-site .footer-socials a {
+  border-radius: 8px;
+  transition: color .2s ease, background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.dentalay-site .footer-socials a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, .09);
+  border-color: #8de5c0;
+  transform: translateY(-2px);
+}
+
+.dentalay-site .whatsapp-float {
+  border: 3px solid #fff;
+  box-shadow: 0 8px 26px rgba(7, 75, 47, .25);
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.dentalay-site .whatsapp-float:hover {
+  box-shadow: 0 12px 32px rgba(7, 75, 47, .32);
+  transform: translateY(-4px) scale(1.04);
+}
+
+/* Ajustes de pantalla */
+@media (max-width: 1100px) {
+  .dentalay-site .navbar {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+}
+
+@media (max-width: 760px) {
+  .dentalay-site .navbar {
+    background: rgba(255, 255, 255, .97);
+  }
+
+  .dentalay-site .nav-links {
+    background: rgba(255, 255, 255, .985);
+    border-bottom: 1px solid #e2eaf1;
+    box-shadow: 0 16px 28px rgba(16, 43, 99, .09);
+  }
+
+  .dentalay-site .nav-links > a:not(.nav-contact)::after {
+    display: none;
+  }
+
+  .dentalay-site .nav-links > a:not(.nav-contact) {
+    color: #243b63;
+  }
+
+  .dentalay-site .dentalay-hero {
+    min-height: 620px;
+    background-position: center, 58% center !important;
+  }
+
+  .dentalay-site .dentalay-hero .hero-content {
+    width: 100%;
+    margin-left: 0;
+    padding: 56px 0;
+  }
+
+  .dentalay-site .dentalay-hero h1 {
+    font-size: clamp(39px, 10vw, 58px);
+  }
+
+  .dentalay-site .dentalay-hero .hero-description {
+    font-size: 15px;
+  }
+
+  .dentalay-site .doctor-layout {
+    gap: 34px;
+  }
+
+  .dentalay-site .doctor-photo,
+  .dentalay-site .doctor-photo img {
+    min-height: 420px;
+  }
+
+  .dentalay-site .bracket-feature-card {
+    border-radius: 16px;
+  }
+
+  .dentalay-site .bracket-options-grid {
+    gap: 18px;
+  }
+
+  .dentalay-site .bracket-option-card,
+  .dentalay-site .category-card {
+    border-radius: 14px;
+  }
+
+  .dentalay-site .orthodontics-details {
+    padding: 24px 20px;
+    border-radius: 15px;
+  }
+
+  .dentalay-site .payment-card {
+    border-radius: 16px;
+  }
+
+  .dentalay-site .faq-group {
+    border-radius: 13px;
+  }
+
+  .dentalay-site .contact-card {
+    border-radius: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dentalay-site *,
+  .dentalay-site *::before,
+  .dentalay-site *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+
+/* =========================================================
+   DENTALAY · CORRECCIONES DE ALINEACIÓN, PRECIOS Y HORARIOS
+   Solo presentación: no modifica textos, imágenes ni funciones.
+   ========================================================= */
+
+/* Tarjetas de ortodoncia: imagen alineada arriba y alturas uniformes */
+.dentalay-site .orthodontics-section > .category-grid {
+  align-items: stretch;
+}
+
+.dentalay-site .orthodontics-section .category-card {
+  height: 100%;
+}
+
+.dentalay-site .orthodontics-section .category-image {
+  height: 176px;
+  min-height: 176px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f8fc;
+}
+
+.dentalay-site .orthodontics-section .category-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.dentalay-site .orthodontics-section .category-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 216px;
+}
+
+.dentalay-site .orthodontics-section .category-info p {
+  flex: 1;
+  margin-bottom: 22px;
+}
+
+.dentalay-site .orthodontics-section .category-info .text-link {
+  margin-top: auto;
+}
+
+/* Pagos: el total vuelve a tener contraste y el precio se lee claramente */
+.dentalay-site .payment-step-total {
+  color: #fff;
+  background: linear-gradient(145deg, #102b63, #17458b);
+  border-color: #102b63;
+  box-shadow: 0 12px 28px rgba(16, 43, 99, .16);
+}
+
+.dentalay-site .payment-step-total > span {
+  color: #9ce9c2 !important;
+}
+
+.dentalay-site .payment-step-total strong {
+  color: #fff !important;
+  font-size: clamp(34px, 3.5vw, 46px);
+  line-height: 1.1;
+}
+
+.dentalay-site .payment-step-total p {
+  color: #e2efff !important;
+}
+
+.dentalay-site .payment-steps {
+  grid-template-columns: minmax(0, 1fr) 34px minmax(0, 1fr) 34px minmax(0, 1.12fr);
+  gap: 14px;
+}
+
+.dentalay-site .payment-step {
+  min-width: 0;
+}
+
+.dentalay-site .payment-plus,
+.dentalay-site .payment-equals {
+  text-align: center;
+  line-height: 1;
+}
+
+.dentalay-site .payment-followup > div {
+  min-width: 0;
+}
+
+.dentalay-site .payment-followup strong {
+  white-space: nowrap;
+  font-size: clamp(21px, 2vw, 26px);
+}
+
+/* Ubicación: separar visualmente días y horarios, y dar aire al bloque */
+.dentalay-site .location-copy {
+  max-width: 720px;
+}
+
+.dentalay-site .clinic-hours {
+  width: 100%;
+  max-width: 720px;
+  margin: 26px 0 22px;
+  padding: 24px 26px;
+}
+
+.dentalay-site .clinic-hours li {
+  grid-template-columns: minmax(190px, .9fr) minmax(0, 1.1fr);
+  column-gap: 22px;
+  row-gap: 6px;
+  padding: 13px 0;
+}
+
+.dentalay-site .clinic-hours li strong {
+  display: inline-block;
+  margin-right: 8px;
+  line-height: 1.65;
+}
+
+.dentalay-site .clinic-hours li span {
+  display: block;
+  line-height: 1.7;
+}
+
+.dentalay-site .location-copy > p:not(.eyebrow) {
+  margin-bottom: 14px;
+}
+
+/* Tablet y móvil */
+@media (max-width: 900px) {
+  .dentalay-site .payment-steps {
+    grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr);
+  }
+
+  .dentalay-site .payment-step-total {
+    grid-column: 1 / -1;
+    min-height: 145px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .dentalay-site .orthodontics-section .category-image {
+    height: 190px;
+    min-height: 190px;
+  }
+
+  .dentalay-site .orthodontics-section .category-info {
+    min-height: 0;
+  }
+
+  .dentalay-site .payment-steps {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .dentalay-site .payment-plus,
+  .dentalay-site .payment-equals {
+    line-height: 1;
+    font-size: 25px;
+  }
+
+  .dentalay-site .payment-step {
+    min-height: 140px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dentalay-site .payment-followup > div {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 17px 18px;
+  }
+
+  .dentalay-site .clinic-hours {
+    padding: 20px;
+  }
+
+  .dentalay-site .clinic-hours li {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  .dentalay-site .clinic-hours li strong {
+    margin-right: 0;
+  }
+}
+
+
+/* =========================================================
+   DENTALAY · IMÁGENES DE TARJETAS DE ORTODONCIA
+   Reducir protagonismo y mostrar más contexto de cada imagen.
+   ========================================================= */
+.dentalay-site .orthodontics-section .category-image {
+  height: 148px;
+  min-height: 148px;
+  padding: 10px 14px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #f5f9fc 0%, #edf5fa 100%);
+}
+
+.dentalay-site .orthodontics-section .category-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 128px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 8px;
+}
+
+@media (max-width: 760px) {
+  .dentalay-site .orthodontics-section .category-image {
+    height: 156px;
+    min-height: 156px;
+    padding: 8px 10px;
+  }
+
+  .dentalay-site .orthodontics-section .category-image img {
+    max-height: 140px;
+  }
+}
+
+
+/* =========================================================
+   DENTALAY · IDENTIDAD VISUAL MÁS VIVA Y CONTEMPORÁNEA
+   Mantiene azul marino, verde y celeste; solo ajusta estética.
+   No cambia textos, imágenes, enlaces ni estructura.
+   ========================================================= */
+
+:root {
+  --cream: #f1f8fc;
+  --beige: #e4f1f6;
+  --green: #0eaa68;
+  --green-dark: #078653;
+  --ink: #102d63;
+  --muted: #526b8d;
+  --white: #ffffff;
+}
+
+/* Fondo general: evitar que toda la web sea una hoja blanca */
+.dentalay-site {
+  background: #f2f7fb;
+  color: #102d63;
+}
+
+.dentalay-site main {
+  background: #f2f7fb;
+}
+
+/* Alternancia de superficies para crear ritmo visual */
+.dentalay-site section {
+  position: relative;
+}
+
+.dentalay-site .orthodontics-section,
+.dentalay-site .faq-section {
+  background:
+    radial-gradient(ellipse at 12% 12%, rgba(24, 177, 151, .08), transparent 38%),
+    linear-gradient(180deg, #edf6fb 0%, #e7f1f8 100%);
+}
+
+.dentalay-site .payment-section,
+.dentalay-site .location-section {
+  background: #f7fafc;
+}
+
+.dentalay-site .contact-section {
+  background:
+    radial-gradient(ellipse at 85% 15%, rgba(23, 174, 111, .13), transparent 34%),
+    linear-gradient(135deg, #e4f1f7 0%, #d9ebf3 100%);
+}
+
+/* Encabezados: acento de marca más visible sin competir con el contenido */
+.dentalay-site .eyebrow {
+  color: #078653;
+  letter-spacing: .19em;
+}
+
+.dentalay-site h1,
+.dentalay-site h2,
+.dentalay-site h3 {
+  color: #102d63;
+}
+
+/* Tarjetas: blanco limpio sobre fondos con color, bordes definidos */
+.dentalay-site .category-card,
+.dentalay-site .faq-group,
+.dentalay-site .contact-card,
+.dentalay-site .payment-step,
+.dentalay-site .payment-followup > div,
+.dentalay-site .clinic-hours {
+  background: rgba(255, 255, 255, .96);
+  border: 1px solid #d3e3ee;
+  box-shadow: 0 12px 32px rgba(16, 45, 99, .07);
+}
+
+.dentalay-site .category-card,
+.dentalay-site .faq-group,
+.dentalay-site .contact-card {
+  border-radius: 18px;
+}
+
+.dentalay-site .category-card:hover,
+.dentalay-site .faq-group:hover,
+.dentalay-site .contact-card:hover {
+  border-color: rgba(14, 170, 104, .42);
+  box-shadow: 0 18px 42px rgba(16, 45, 99, .12);
+}
+
+/* Encabezados y barras internas con un matiz celeste */
+.dentalay-site .faq-group > h3,
+.dentalay-site .faq-group-title {
+  background: linear-gradient(100deg, #e1f2f5, #edf6fb);
+  color: #102d63;
+  border-radius: 10px;
+}
+
+/* Área de ubicación: panel más definido */
+.dentalay-site .location-section .clinic-hours {
+  background: #ffffff;
+  border-color: #cbdfea;
+  border-radius: 16px;
+}
+
+.dentalay-site .clinic-hours li {
+  border-color: #e1ebf2;
+}
+
+/* Contacto: más contraste y jerarquía */
+.dentalay-site .contact-card {
+  background: #ffffff;
+  border-top: 3px solid #0eaa68;
+  box-shadow: 0 16px 38px rgba(16, 45, 99, .09);
+}
+
+.dentalay-site .contact-card .icon,
+.dentalay-site .contact-card-icon {
+  background: #e1f5ed;
+  color: #078653;
+}
+
+/* Enlaces y botones con acabado más actual */
+.dentalay-site .btn,
+.dentalay-site button,
+.dentalay-site .button {
+  border-radius: 10px;
+  transition:
+    transform .22s ease,
+    box-shadow .22s ease,
+    background-color .22s ease,
+    border-color .22s ease;
+}
+
+.dentalay-site .btn-primary,
+.dentalay-site .button-primary {
+  background: linear-gradient(135deg, #12b875, #078d58);
+  box-shadow: 0 8px 20px rgba(14, 170, 104, .2);
+}
+
+.dentalay-site .btn-primary:hover,
+.dentalay-site .button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(14, 170, 104, .28);
+}
+
+.dentalay-site a:not(.btn):not(.button) {
+  transition: color .2s ease;
+}
+
+.dentalay-site a:not(.btn):not(.button):hover {
+  color: #078653;
+}
+
+/* Footer: conservar azul institucional y reforzar acabado */
+.dentalay-site footer {
+  background: linear-gradient(135deg, #102d63 0%, #173f7c 100%);
+}
+
+/* Separadores sutiles y consistentes */
+.dentalay-site hr {
+  border: 0;
+  border-top: 1px solid #d9e7ef;
+}
+
+/* Accesibilidad: no forzar animación si el usuario la reduce */
+@media (prefers-reduced-motion: reduce) {
+  .dentalay-site .btn,
+  .dentalay-site button,
+  .dentalay-site .button,
+  .dentalay-site a {
+    transition: none;
+  }
+}
+
+
+/* =========================================================
+   DENTALAY · CONTRASTE FINAL DE PRECIOS Y ACENTOS
+   ========================================================= */
+
+/* El importe del primer pago debe destacar con alto contraste */
+.dentalay-site .payment-card .payment-step-total,
+.dentalay-site .payment-card .payment-step-total * {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.dentalay-site .payment-card .payment-step-total {
+  background: linear-gradient(135deg, #102b63 0%, #17458b 58%, #176b78 100%) !important;
+  border: 1px solid #17458b !important;
+  color: #ffffff !important;
+}
+
+.dentalay-site .payment-card .payment-step-total > span,
+.dentalay-site .payment-card .payment-step-total span {
+  color: #8df0c1 !important;
+}
+
+.dentalay-site .payment-card .payment-step-total strong,
+.dentalay-site .payment-card .payment-step-total b,
+.dentalay-site .payment-card .payment-step-total .price,
+.dentalay-site .payment-card .payment-step-total .amount,
+.dentalay-site .payment-card .payment-step-total [class*="price"],
+.dentalay-site .payment-card .payment-step-total [class*="amount"] {
+  display: block !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  font-size: clamp(36px, 4vw, 50px) !important;
+  font-weight: 850 !important;
+  line-height: 1.12 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, .18);
+}
+
+.dentalay-site .payment-card .payment-step-total p {
+  color: #e5f4ff !important;
+  opacity: 1 !important;
+}
+
+/* Acentos verdes más sólidos: evitar tonos pálidos y poco legibles */
+.dentalay-site .eyebrow,
+.dentalay-site .payment-followup span,
+.dentalay-site .text-link,
+.dentalay-site .category-info .text-link {
+  color: #078653 !important;
+}
+
+.dentalay-site .faq-group > h3,
+.dentalay-site .faq-group-title {
+  background: #d8eee7 !important;
+  border-left: 4px solid #0eaa68;
+}
+
+.dentalay-site .appointment-note,
+.dentalay-site .contact-card-icon,
+.dentalay-site .contact-card .icon {
+  background: #d8eee7 !important;
+  color: #075c42 !important;
+}
+
+.dentalay-site .contact-section {
+  background:
+    radial-gradient(ellipse at 12% 12%, rgba(14, 170, 104, .18), transparent 38%),
+    linear-gradient(135deg, #dcecf4 0%, #cfe5ef 100%) !important;
+}
+
+.dentalay-site .orthodontics-section,
+.dentalay-site .faq-section {
+  background:
+    radial-gradient(ellipse at 90% 8%, rgba(14, 170, 104, .11), transparent 35%),
+    linear-gradient(180deg, #e7f2f8 0%, #dcecf4 100%) !important;
+}
+
+.dentalay-site .payment-card {
+  background: linear-gradient(145deg, #e4f0f7, #dceaf3) !important;
+  border-color: #c7dce9 !important;
+}
+
+.dentalay-site .category-card,
+.dentalay-site .faq-group,
+.dentalay-site .contact-card {
+  border-color: #c8dce8 !important;
+  box-shadow: 0 14px 34px rgba(16, 45, 99, .09) !important;
+}
