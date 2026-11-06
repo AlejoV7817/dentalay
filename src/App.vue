@@ -72,16 +72,22 @@ const socialLinks = computed(() => [
 
 const bracketOptions = [
   {
-    name: 'Brackets de autoligado',
-    description: 'La opción destacada de la clínica: no necesita ligas de colores y ofrece una apariencia discreta. La duración del tratamiento depende de cada diagnóstico.',
-    image: '/images/brackets1.png',
-    featured: true,
-  },
-  {
     name: 'Brackets estéticos',
     description: 'Una opción discreta que busca integrarse visualmente con los dientes. La indicación depende de tu valoración y de las características del sistema.',
-    image: '/images/brackets1.png',
+    image: '/images/brackets-esteticos.png',
     featured: false,
+  },
+  {
+    name: 'Brackets convencionales',
+    description: 'Sistema convencional con brackets y ligas. En consulta te explicaremos sus cuidados, ajustes y si es adecuado para tu caso.',
+    image: '/images/brackets-convencionales.png',
+    featured: false,
+  },
+  {
+    name: 'Brackets de autoligado',
+    description: 'La opción destacada de la clínica: no necesita ligas de colores y ofrece una apariencia discreta. Su sistema permite movimientos continuos; la duración del tratamiento depende de cada diagnóstico y no puede garantizarse que sea menor en todos los casos.',
+    image: '/images/brackets1.png',
+    featured: true,
   },
 ]
 
@@ -689,7 +695,7 @@ onUnmounted(() => {
 
           <div class="bracket-feature-image">
 
-            <img :src="assetUrl('/images/brackets-autoligado.png')" alt="Brackets de autoligado estéticos" loading="lazy" />
+            <img :src="assetUrl('/images/brackets1.png')" alt="Brackets de autoligado estéticos" loading="lazy" />
 
           </div>
 
