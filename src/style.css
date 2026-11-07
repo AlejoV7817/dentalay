@@ -2146,29 +2146,29 @@ img{display:block;max-width:100%}
   box-shadow: 0 14px 34px rgba(16, 45, 99, .09) !important;
 }
 
+
+
 /* =========================================================
-   DENTALAY · CORRECCIONES SOLICITADAS
+   DENTALAY · RESTAURACIÓN DE LA SECCIÓN DE BRACKETS
+   Diseño recuperado de la referencia visual del usuario.
    ========================================================= */
 
-/* Etiquetas verdes más grandes y legibles en todas las secciones. */
+/* Se conservan los ajustes generales de identidad visual. */
 .dentalay-site .eyebrow {
   color: #078653 !important;
-  font-size: 14px !important;
-  font-weight: 850 !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
   letter-spacing: .16em !important;
-  line-height: 1.55 !important;
+  line-height: 1.5 !important;
 }
 
-/* En el hero se usa un verde claro para mantener contraste sobre la foto. */
 .dentalay-site .dentalay-hero .eyebrow {
   color: #8df0c1 !important;
-  font-size: 14px !important;
-  font-weight: 900 !important;
-  letter-spacing: .18em !important;
-  text-shadow: 0 1px 10px rgba(0, 0, 0, .28);
+  font-size: 12px !important;
+  font-weight: 850 !important;
+  letter-spacing: .17em !important;
 }
 
-/* Cabecera: aumentar tanto el símbolo como las dos líneas del logotipo. */
 .dentalay-site .navbar {
   min-height: 104px;
 }
@@ -2195,12 +2195,254 @@ img{display:block;max-width:100%}
   letter-spacing: 2.3px;
 }
 
-/* La solicitud incluye solo dos tarjetas: autoligado y estéticos. */
-.dentalay-site .bracket-options-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+/* Sección completa */
+.dentalay-site .orthodontic-feature-section {
+  padding-top: 26px;
+  padding-bottom: 72px;
+  background: #f2f8fb;
 }
 
-@media (max-width: 760px) {
+.dentalay-site .orthodontic-feature-section > .section-heading {
+  width: min(100%, 620px);
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.dentalay-site .orthodontic-feature-section > .section-heading .eyebrow {
+  margin: 0 0 8px;
+  font-size: 9px !important;
+  letter-spacing: .18em !important;
+}
+
+.dentalay-site .orthodontic-feature-section > .section-heading h2 {
+  margin: 0;
+  color: #102b63;
+  font-size: clamp(27px, 3.2vw, 36px);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -.035em;
+}
+
+.dentalay-site .orthodontic-feature-section > .section-heading > p:last-child {
+  max-width: 520px;
+  margin: 12px auto 0;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+/* Tarjeta destacada: fotografía izquierda e información derecha. */
+.dentalay-site .orthodontic-feature-section .bracket-feature-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, .96fr);
+  width: min(1160px, 100%);
+  min-height: 0;
+  margin: 0 auto 22px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e0eaf1;
+  border-radius: 13px;
+  box-shadow: 0 16px 42px rgba(16, 43, 99, .09);
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-feature-image {
+min-width: 0;
+  height: 360px;
+  min-height: 360px;
+  max-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f7eeee;
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-feature-image img {
+  display: block;
+  width: 78%;
+  height: 78%;
+  min-height: 0;
+  max-height: 290px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-feature-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: clamp(22px, 3.2vw, 42px);
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-feature-copy .eyebrow {
+  margin: 0 0 8px;
+  font-size: 9px !important;
+  letter-spacing: .16em !important;
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-feature-copy h3 {
+  margin: 0 0 10px;
+  color: #102b63;
+  font-size: clamp(23px, 2.6vw, 30px) !important;
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-feature-copy .feature-intro {
+  margin: 0 0 12px;
+  color: #455a78;
+  font-size: 11px !important;
+  line-height: 1.65;
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-feature-copy ul {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 13px;
+  padding: 0;
+  list-style: none;
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-feature-copy li {
+  position: relative;
+  padding-left: 21px;
+  color: #344c70;
+  font-size: 10px !important;
+  line-height: 1.55;
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-feature-copy li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  width: 14px;
+  height: 14px;
+  place-items: center;
+  color: #0a9c54;
+  background: #e6f7ee;
+  border-radius: 50%;
+  content: "✓";
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-feature-note {
+  margin: 0 0 14px;
+  color: #64748b;
+  font-size: 9px !important;
+  line-height: 1.6;
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-feature-copy .button {
+  min-height: 34px;
+  padding: 9px 14px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+/* Tres tarjetas en una sola fila, como en la captura de referencia. */
+.dentalay-site .orthodontic-feature-section .bracket-options-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 16px;
+  width: min(1160px, 100%);
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-option-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #dce7ef;
+  border-radius: 10px;
+  box-shadow: 0 7px 20px rgba(16, 43, 99, .055);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-option-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 13px 28px rgba(16, 43, 99, .09);
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-option-image {
+  display: block;
+  width: 100%;
+  height: 138px !important;
+  min-height: 138px !important;
+  padding: 7px;
+  overflow: hidden;
+  background: #f5f8fb;
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-option-image img {
+display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  padding: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-option-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 13px 14px 15px;
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-option-copy h3 {
+  margin: 0 0 7px;
+  color: #102b63;
+  font-size: 13px !important;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-option-copy p {
+  min-height: 0 !important;
+  margin: 0 0 12px;
+  color: #64748b;
+  font-size: 10px !important;
+  line-height: 1.6;
+}
+
+.dentalay-site .orthodontic-feature-section .bracket-option-copy a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: auto;
+  color: #078d53;
+  font-size: 10px !important;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+/* La imagen comparativa y el resto de la sección conservan su lugar. */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .dentalay-site .orthodontic-feature-section .bracket-options-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .dentalay-site .orthodontic-feature-section .bracket-feature-image,
+  .dentalay-site .orthodontic-feature-section .bracket-feature-image img {
+    min-height: 0;
+    height: 78%;
+    max-height: 260px;
+  }
+}
+
+/* Móvil */
+@media (max-width: 700px) {
   .dentalay-site .navbar {
     min-height: 82px;
   }
@@ -2219,213 +2461,57 @@ img{display:block;max-width:100%}
     letter-spacing: 1.8px;
   }
 
-  .dentalay-site .bracket-options-grid {
+  .dentalay-site .orthodontic-feature-section {
+    padding-top: 42px;
+    padding-bottom: 54px;
+  }
+
+  .dentalay-site .orthodontic-feature-section .bracket-feature-card {
     grid-template-columns: 1fr;
   }
 
-  .dentalay-site .eyebrow {
-    font-size: 12.5px !important;
-    letter-spacing: .13em !important;
-  }
-
-  .dentalay-site .dentalay-hero .eyebrow {
-    font-size: 12.5px !important;
-  }
-
-}
-
-/* =========================================================
-   DENTALAY · ORTODONCIA: AJUSTE REAL DE TARJETAS
-   Se aplican estilos a .bracket-options-grid, que es la
-   clase que realmente usa App.vue para estas tres tarjetas.
-   ========================================================= */
-
-/* Mantener dos tarjetas por fila, con una tercera debajo. */
-.dentalay-site .bracket-options-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  gap: 14px !important;
-  width: min(100%, 900px) !important;
-  margin: 0 auto 28px !important;
-  align-items: stretch;
-}
-
-.dentalay-site .bracket-options-grid .bracket-option-card {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  overflow: hidden;
-  border: 1px solid #dce8ef;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 5px 16px rgba(16, 43, 99, .055);
-}
-
-/* Reducir de forma visible la altura de las fotografías. */
-.dentalay-site .bracket-options-grid .bracket-option-image {
+  .dentalay-site .orthodontic-feature-section .bracket-feature-image,
+  .dentalay-site .orthodontic-feature-section .bracket-feature-image img {
   display: block;
-  width: 100%;
-  height: 112px !important;
-  min-height: 112px !important;
-  padding: 5px;
-  overflow: hidden;
-  background: #f5f9fc;
-}
-
-.dentalay-site .bracket-options-grid .bracket-option-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  max-height: 102px;
-  padding: 0;
+  width: 78%;
+  height: 78%;
+  min-height: 0;
+  max-height: 230px;
   object-fit: contain;
   object-position: center;
 }
 
-/* Reducir etiquetas, títulos y textos de las tarjetas. */
-.dentalay-site .bracket-options-grid .bracket-option-copy {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 112px;
-  padding: 11px 13px 13px;
-}
-
-.dentalay-site .bracket-options-grid .bracket-option-copy h3 {
-  margin: 0 0 6px;
-  color: #102b63;
-  font-size: 14px !important;
-  font-weight: 750;
-  line-height: 1.3;
-}
-
-.dentalay-site .bracket-options-grid .bracket-option-copy p {
-  min-height: 0 !important;
-  margin: 0 0 9px;
-  color: #64748b;
-  font-size: 10.5px !important;
-  line-height: 1.5;
-}
-
-.dentalay-site .bracket-options-grid .bracket-option-copy a {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  margin-top: auto;
-  color: #078d53;
-  font-size: 10.5px !important;
-  font-weight: 750;
-  line-height: 1.4;
-}
-
-/* Ajuste de la tarjeta destacada superior: menos volumen. */
-.dentalay-site .bracket-feature-card {
-  width: min(100%, 900px) !important;
-  margin: 0 auto 14px !important;
-  grid-template-columns: minmax(0, 1fr) minmax(0, .9fr);
-  border-radius: 12px;
-}
-
-.dentalay-site .bracket-feature-image,
-.dentalay-site .bracket-feature-image img {
-  height: 250px !important;
-  min-height: 250px !important;
-  max-height: 250px !important;
-}
-
-.dentalay-site .bracket-feature-copy {
-  padding: 18px 20px !important;
-}
-
-.dentalay-site .bracket-feature-copy .eyebrow {
-  margin-bottom: 7px;
-  font-size: 9px !important;
-  letter-spacing: .12em !important;
-}
-
-.dentalay-site .bracket-feature-copy h3 {
-  margin: 0 0 8px;
-  font-size: clamp(19px, 2vw, 25px) !important;
-  line-height: 1.15;
-}
-
-.dentalay-site .bracket-feature-copy .feature-intro {
-  margin-bottom: 9px;
-  font-size: 11px !important;
-  line-height: 1.5;
-}
-
-.dentalay-site .bracket-feature-copy ul {
-  gap: 6px;
-  margin-bottom: 9px;
-}
-
-.dentalay-site .bracket-feature-copy li {
-  padding-left: 17px;
-  font-size: 10px !important;
-  line-height: 1.45;
-}
-
-.dentalay-site .bracket-feature-note {
-  margin-bottom: 10px;
-  font-size: 9px !important;
-  line-height: 1.45;
-}
-
-.dentalay-site .bracket-feature-copy .button {
-  min-height: 32px;
-  padding: 8px 12px;
-  font-size: 10px;
-}
-
-/* Tablet: dos columnas siguen siendo cómodas. */
-@media (max-width: 760px) {
-  .dentalay-site .bracket-options-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 11px !important;
-  }
-
-  .dentalay-site .bracket-feature-card {
-    grid-template-columns: minmax(0, 1fr) minmax(0, .95fr);
-  }
-
-  .dentalay-site .bracket-feature-image,
-  .dentalay-site .bracket-feature-image img {
-    height: 210px !important;
-    min-height: 210px !important;
-    max-height: 210px !important;
-  }
-}
-
-/* Móvil angosto: una tarjeta por fila para no aplastar el texto. */
-@media (max-width: 520px) {
-  .dentalay-site .bracket-options-grid {
+  .dentalay-site .orthodontic-feature-section .bracket-options-grid {
     grid-template-columns: 1fr !important;
-    max-width: 390px !important;
+    max-width: 430px;
   }
 
-  .dentalay-site .bracket-options-grid .bracket-option-image {
-    height: 135px !important;
-    min-height: 135px !important;
+  .dentalay-site .orthodontic-feature-section .bracket-option-image {
+display: flex;
+  width: 100%;
+  height: 135px;
+  min-height: 135px;
+  max-height: 135px;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  overflow: hidden;
+  background: #f5f8fb;
+}
+
+  .dentalay-site .orthodontic-feature-section .bracket-option-copy {
+    padding: 15px 16px 17px;
   }
 
-  .dentalay-site .bracket-options-grid .bracket-option-image img {
-    max-height: 125px;
+  .dentalay-site .orthodontic-feature-section .bracket-option-copy h3 {
+    font-size: 15px !important;
   }
 
-  .dentalay-site .bracket-feature-card {
-    grid-template-columns: 1fr;
+  .dentalay-site .orthodontic-feature-section .bracket-option-copy p {
+    font-size: 12px !important;
   }
 
-  .dentalay-site .bracket-feature-image,
-  .dentalay-site .bracket-feature-image img {
-    height: 175px !important;
-    min-height: 175px !important;
-    max-height: 175px !important;
-  }
-
-  .dentalay-site .bracket-feature-copy {
-    padding: 16px !important;
+  .dentalay-site .orthodontic-feature-section .bracket-option-copy a {
+    font-size: 11px !important;
   }
 }
