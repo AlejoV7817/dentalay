@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://dentalaycoyoacan.com.mx/sitemap.xml
